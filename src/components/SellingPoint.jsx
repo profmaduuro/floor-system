@@ -1,4 +1,5 @@
 import React from 'react'
+import './selling.css'
 
 const SellingPoint = (props) => {
   return (
@@ -10,9 +11,9 @@ const SellingPoint = (props) => {
 
       <br />
 
-      <div className='col-auto'> 
+      <div className='card_1 center'> 
 
-      <form action="" className='center'>
+      <form action="" className=''>
     
         <label htmlFor="File to Upload">Name</label>
         <input type="text" className='form-control' placeholder='Enter Name' />
@@ -40,7 +41,7 @@ const SellingPoint = (props) => {
 
       <h4 className='bi bi-home'>Selling Points</h4>
 
-      <div>
+      <div className='card_1'>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>

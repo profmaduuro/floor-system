@@ -21,6 +21,11 @@
   color: #872642;
 }
 
+.table {
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
 .card_1 {
     background-color: #fff;
     border-radius: 10px;

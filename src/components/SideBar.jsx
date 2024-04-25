@@ -393,11 +393,11 @@ const SideBar=(props)=> {
                 <span>Selling Point</span>
                 </Link>
                 </li>
-                <li>
-                    <a href="#">
+                <li onClick={props.gradesclick}>
+                    <Link to="/Grades">
                         <i className='bi bi-circle'></i>
                 <span>Grades</span>
-                </a>
+                </Link>
                 </li>
                 <li>
                     <a href="#">

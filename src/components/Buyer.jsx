@@ -10,7 +10,7 @@ const Buyer = (props) => {
             </a>
         <h4 className='bi bi-home'>Create Buyer</h4>
 
-        <div className='card center'>
+        <div className='card_1 center'>
 
            <form action="" className=''>
              <label htmlFor="">Buyer Name</label>
@@ -40,7 +40,7 @@ const Buyer = (props) => {
 
         <h5>Buyers</h5>
 
-        <div className='card'>
+        <div className='card_1'>
 
         <table class="table table-striped table-hover">
             <thead>

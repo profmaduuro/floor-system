@@ -24,6 +24,7 @@ import StopOrderProcess from './components/StopOrderProcess';
 import SellingPoint from './components/SellingPoint';
 import Buyer from './components/Buyer';
 import ManageUsers from './components/ManageUsers';
+import Grades from './components/Grades';
 
 class App extends Component {
 
@@ -91,13 +92,19 @@ class App extends Component {
     this.setState({"route":"ManageUsers"})
   }
 
+  gradesclick=()=>{
+
+    console.log("pri")
+    this.setState({"route":"Grades"})
+  }
+
 
 
 
 
   render(){
 
-    if(this.state.route==""){
+    if(this.state.route===""){
 
 
     return (
@@ -106,7 +113,8 @@ class App extends Component {
       <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick} />
       <Main >
         <PageTitle/>
       </Main>
@@ -115,7 +123,7 @@ class App extends Component {
    
     
 );
-    }else if(this.state.route=="home"){
+    }else if(this.state.route==="home"){
 
       return (
         <>
@@ -123,7 +131,8 @@ class App extends Component {
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick} />
         <Main >
           <PageTitle/>
         </Main>
@@ -132,14 +141,15 @@ class App extends Component {
      
       
   );
-    }else if(this.state.route=="Files"){
+    }else if(this.state.route==="Files"){
       return (
         <>
         <Header />
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick} />
         <Main >
         <Files />
         </Main>
@@ -148,7 +158,7 @@ class App extends Component {
      
       
   );
-    }else if (this.state.route=="SalesRun") {
+    }else if (this.state.route==="SalesRun") {
     
       return (
         <>
@@ -156,7 +166,8 @@ class App extends Component {
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+      gradesclick={this.gradesclick} />
         <Main >
           <SalesRun />
         </Main>
@@ -165,7 +176,7 @@ class App extends Component {
      
       
   );
-  }else if(this.state.route=="GrowerReg"){
+  }else if(this.state.route==="GrowerReg"){
 
     return (
       <>
@@ -173,7 +184,8 @@ class App extends Component {
       <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}/>
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick}/>
       <Main >
         <GrowerReg />
       </Main>
@@ -181,7 +193,7 @@ class App extends Component {
       </>
 
     );
-    }else if(this.state.route=="Booking") {
+    }else if(this.state.route==="Booking") {
 
       return (
         <>
@@ -189,7 +201,8 @@ class App extends Component {
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}/>
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick}/>
         <Main >
           <Booking />
         </Main>
@@ -197,7 +210,7 @@ class App extends Component {
         </>
   
       );
-    }else if(this.state.route=="StopOrderProcess"){
+    }else if(this.state.route==="StopOrderProcess"){
 
       return (
         <>
@@ -205,7 +218,8 @@ class App extends Component {
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+      gradesclick={this.gradesclick} />
         <Main >
           <StopOrderProcess />
         </Main>
@@ -213,40 +227,43 @@ class App extends Component {
         </>
   
       );
-    }else if(this.state.route=="SellingPoint"){
+    }else if(this.state.route==="SellingPoint"){
       return (
         <>
         <Header />
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+      gradesclick={this.gradesclick} />
         <Main>
           <SellingPoint />
         </Main>
         </>
       );
-    }else if(this.state.route=="Buyer"){
+    }else if(this.state.route==="Buyer"){
       return (
         <>
         <Header />
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+      sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
+      gradesclick={this.gradesclick} />
          <Main>
           <Buyer />
         </Main>
         </>
       );
-    }else if(this.state.route=="ManageUsers"){
+    }else if(this.state.route==="ManageUsers"){
       return (
         <>
         <Header />
         <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
          salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
          bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
-        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} />
+        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+        gradesclick={this.gradesclick} />
          <Main>
           <ManageUsers />
          </Main>
@@ -254,6 +271,21 @@ class App extends Component {
         </>
       );
       
+    }else if(this.state.route==="Grades"){
+      return (
+        <>
+        <Header />
+        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
+         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
+        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+        gradesclick={this.gradesclick} />
+         <Main>
+          <Grades />
+         </Main>
+        
+        </>
+      );
     }
 
 }
