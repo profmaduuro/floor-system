@@ -25,7 +25,7 @@ const ManageUsers = (props) => {
 
       <h4 className='bi bi-home'>Selling Points</h4>
 
-      <div>
+      <div className='card_10'>
         <table class="table table-striped table-hover">
             <thead>
                 <tr>

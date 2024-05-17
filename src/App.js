@@ -25,6 +25,8 @@ import SellingPoint from './components/SellingPoint';
 import Buyer from './components/Buyer';
 import ManageUsers from './components/ManageUsers';
 import Grades from './components/Grades';
+import Backup from './components/Backup';
+import Parameters from './components/Parameters';
 
 class App extends Component {
 
@@ -98,6 +100,18 @@ class App extends Component {
     this.setState({"route":"Grades"})
   }
 
+  backupclick=()=>{
+
+    console.log("pri")
+    this.setState({"route":"Backup"})
+  }
+
+  parametersclick=()=>{
+
+    console.log("pri")
+    this.setState({"route":"Parameters"})
+  }
+
 
 
 
@@ -114,7 +128,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
       <Main >
         <PageTitle/>
       </Main>
@@ -132,7 +146,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
         <Main >
           <PageTitle/>
         </Main>
@@ -149,7 +163,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
         <Main >
         <Files />
         </Main>
@@ -167,7 +181,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
         <Main >
           <SalesRun />
         </Main>
@@ -185,7 +199,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick}/>
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
       <Main >
         <GrowerReg />
       </Main>
@@ -202,7 +216,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick}/>
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
         <Main >
           <Booking />
         </Main>
@@ -219,7 +233,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
         <Main >
           <StopOrderProcess />
         </Main>
@@ -235,7 +249,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
         <Main>
           <SellingPoint />
         </Main>
@@ -249,7 +263,7 @@ class App extends Component {
        salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
        bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
       sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick}
-      gradesclick={this.gradesclick} />
+      gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
          <Main>
           <Buyer />
         </Main>
@@ -263,7 +277,7 @@ class App extends Component {
          salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
          bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
         sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-        gradesclick={this.gradesclick} />
+        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
          <Main>
           <ManageUsers />
          </Main>
@@ -279,13 +293,46 @@ class App extends Component {
          salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
          bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
         sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
-        gradesclick={this.gradesclick} />
+        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick}/>
          <Main>
           <Grades />
          </Main>
         
         </>
       );
+    }else if(this.state.route==="Backup") {
+      return (
+        <>
+        <Header />
+        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
+         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
+        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
+         <Main>
+          <Backup />
+         </Main>
+
+        
+        </>
+
+      );
+    }else if(this.state.route==="Parameters") {
+      return (
+        <>
+        <Header />
+        <SideBar onclick={this.onclick} homeclick={this.homeclick} filesclick={this.filesclick}
+         salesrunclick={this.salesrunclick} growerregclick={this.growerregclick} 
+         bookingclick={this.bookingclick} stoporderproclick={this.stoporderproclick} 
+        sellingpointclick={this.sellingpointclick} buyerclick={this.buyerclick} usersclick={this.usersclick} 
+        gradesclick={this.gradesclick} backupclick={this.backupclick} parametersclick={this.parametersclick} />
+         <Main>
+          <Parameters />
+         </Main>
+
+        
+        </>
+      )
     }
 
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import './grades.css';
 //DataTable imports
+import { DataTable } from 'primereact/datatable';
+import { Column } from 'primereact/column';
 
 const Grades = (props) => {
   return (
@@ -17,18 +19,7 @@ const Grades = (props) => {
                   <div class="navbar-nav">
                       <a href="" class="nav-item nav-link active" data-bs-toggle="modal" data-bs-target="#example">Create Grade</a>
                       <a href="" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#example2">Upload Grades</a>
-                      {/* <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Buyer</a>
-                          <div class="dropdown-menu">
-                              <a href="/Buyer" class="dropdown-item">Buyers</a>
-                              <a href="#" class="dropdown-item">Buying staff</a>
-                              {/* <a href="#" class="dropdown-item">Drafts</a>
-                          </div>
-                      </div> */}
                   </div>
-                  {/* <div class="navbar-nav">
-                      <a href="#" class="nav-item nav-link">Login</a>
-                  </div> */}
               </div>
           </div>
       </nav>
@@ -44,7 +35,7 @@ const Grades = (props) => {
             
           </div>
    
-          <table className='table table-striped table-hover display nowrap' id="example">
+          <table className='table table-striped table-hover display nowrap' id="">
             <thead>
               <th><input type="checkbox" className='form-check-input'/></th>
               <th>Grade</th>

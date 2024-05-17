@@ -399,17 +399,17 @@ const SideBar=(props)=> {
                 <span>Grades</span>
                 </Link>
                 </li>
-                <li>
-                    <a href="#">
+                <li onClick={props.parametersclick}>
+                    <Link to="/Parameters">
                         <i className='bi bi-circle'></i>
                 <span>Statutory Parameters</span>
-                </a>
+                </Link>
                 </li>
-                <li>
-                    <a href="#">
+                <li onClick={props.backupclick}>
+                    <Link to="/Backup">
                         <i className='bi bi-circle'></i>
                 <span>Backup</span>
-                </a>
+                </Link>
                 </li>
                 <li onClick={props.usersclick}>
                     <Link to="/ManageUsers">
